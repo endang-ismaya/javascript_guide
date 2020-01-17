@@ -1,0 +1,40 @@
+body {
+    background-color: azure;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.container h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.success,
+.error,
+.warning {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    padding: 5px;
+    margin: 5px 0 15px 0;
+}
+
+.success {
+    background-color: green;
+}
+
+.error {
+    background-color: red;
+}
+
+.warning {
+    background-color: yellow;
+    color: #000;
+}
+
+
+input[type=submit] {
+    background-color: teal;
+    color: #fff;
+}
