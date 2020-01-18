@@ -1,5 +1,3 @@
-/* jshint esversion: 6 */
-
 // Get local text-file
 function getText() {
   fetch('test.txt')
