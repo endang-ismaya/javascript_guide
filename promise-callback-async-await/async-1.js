@@ -28,21 +28,34 @@ async function add(x, y) {
   return x + y;
 }
 
-add('e', 10)
-  .then(res => {
-    console.log(`Promise resolved with: ${res}`);
-  })
-  .catch(err => console.error(`Promise rejected with: ${err}`));
+// add('e', 10)
+//   .then(res => {
+//     console.log(`Promise resolved with: ${res}`);
+//   })
+//   .catch(err => console.error(`Promise rejected with: ${err}`));
 
 // Async and Await
-async function getPlanets() {
+// async function getPlanets() {
+//   try {
+//     const res = await axios.get('https://swapi.co/api/planets');
+//     const planets = res.data.results.map(planet => planet.name);
+//     console.log(planets.join('\n'));
+//   } catch (e) {
+//     console.error(e);
+//   }
+// }
+
+// getPlanets();
+
+// test read json
+async function readJson() {
   try {
-    const res = await axios.get('https://swapi.co/api/planets');
-    const planets = res.data.results.map(planet => planet.name);
-    console.log(planets.join('\n'));
-  } catch (e) {
-    console.error(e);
+    const jsonData = await axios.get('./../package.json');
+    console.log(jsonData);
+  } catch (err) {
+    console.log(`error in here`);
+    console.error(err);
   }
 }
 
-getPlanets();
+readJson();
