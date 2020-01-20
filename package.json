@@ -27,6 +27,7 @@
     "prettier": "^1.19.1"
   },
   "dependencies": {
+    "axios": "^0.19.1",
     "cross-fetch": "^3.0.4",
     "xmlhttprequest": "^1.8.0"
   }
