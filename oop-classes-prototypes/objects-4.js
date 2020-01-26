@@ -1,3 +1,4 @@
+/* eslint-disable guard-for-in */
 /* eslint-disable no-prototype-builtins */
 /* eslint-disable no-restricted-syntax */
 // Reed Barger
@@ -19,6 +20,7 @@ for (let u in user) {
   if (user.hasOwnProperty(u)) {
     console.log(`${u}: ${user[u]}`);
   }
+  console.log(u);
 }
 
 // Object.keys

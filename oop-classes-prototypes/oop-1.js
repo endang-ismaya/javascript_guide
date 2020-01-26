@@ -34,10 +34,15 @@ function Circle(radius) {
   };
 }
 
+Circle.prototype.sketch = function() {
+  console.log(`sketch the draw`);
+};
+
 // Accessing Object
 const circle = new Circle(20);
+circle.sketch();
 circle.draw();
 console.log(circle.getDefaultLocation()); // calling private method #1
 console.log(circle.defaultLocation2); // calling private method #2
 
-circle.defaultLocation2 = 1; // will throw an Error invalid location
+// circle.defaultLocation2 = 1; // will throw an Error invalid location
