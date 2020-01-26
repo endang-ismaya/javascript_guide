@@ -1,3 +1,5 @@
+/* eslint-disable guard-for-in */
+/* eslint-disable no-restricted-syntax */
 /*
 CodingRevolution
 The Complete beginner Javascript es5. es6 and JQuery course
