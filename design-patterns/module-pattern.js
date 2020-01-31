@@ -16,7 +16,6 @@ const UICtrl = (function() {
       changeText();
     }
   };
-
 })();
 
 // test UICtrl
@@ -41,9 +40,8 @@ const UICtrlRevealing = (function() {
     add: add,
     get: get
   };
-
 })();
 
-UICtrlRevealing.add({id: 1, name: 'John'});
-UICtrlRevealing.add({id: 2, name: 'Smith'});
+UICtrlRevealing.add({ id: 1, name: 'John' });
+UICtrlRevealing.add({ id: 2, name: 'Smith' });
 console.log(UICtrlRevealing.get(1));

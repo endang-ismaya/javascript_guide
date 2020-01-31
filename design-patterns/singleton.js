@@ -1,22 +1,21 @@
-/* jshint esversion: 6 */
+/* eslint-disable no-new-object */
 
 const singleton = (function() {
   let instance;
 
   function createInstance() {
-    const object = new Object({name: 'Endang'});
+    const object = new Object({ name: 'Endang' });
     return object;
   }
 
   return {
     getInstance: function() {
-      if(!instance) {
+      if (!instance) {
         instance = createInstance();
       }
       return instance;
     }
   };
-
 })();
 
 const instanceA = singleton.getInstance();

@@ -1,4 +1,17 @@
-/* jshint esversion: 6 */
+const SimpleMembership = function(name) {
+  this.name = name;
+  this.cost = '$5';
+};
+
+const StandardMembership = function(name) {
+  this.name = name;
+  this.cost = '$15';
+};
+
+const SuperMembership = function(name) {
+  this.name = name;
+  this.cost = '$25';
+};
 
 function MemberFactory() {
   this.createMember = function(name, type) {
@@ -22,30 +35,13 @@ function MemberFactory() {
   };
 }
 
-const SimpleMembership = function(name) {
-  this.name = name;
-  this.cost = '$5';
-};
-
-const StandardMembership = function(name) {
-  this.name = name;
-  this.cost = '$15';
-};
-
-const SuperMembership = function(name) {
-  this.name = name;
-  this.cost = '$25';
-};
-
 const members = [];
-const factory =  new MemberFactory();
+const factory = new MemberFactory();
 members.push(factory.createMember('John Doe', 'simple'));
 members.push(factory.createMember('John Smith', 'standard'));
 members.push(factory.createMember('John Josh', 'super'));
 
 // console.log(members);
-
 members.forEach(function(member) {
   member.define();
 });
-

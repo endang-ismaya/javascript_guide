@@ -1,5 +1,3 @@
-/* jshint esversion: 6 */
-
 function EventObserver() {
   this.observers = [];
 }
@@ -30,6 +28,11 @@ EventObserver.prototype = {
 
 const click = new EventObserver();
 
+// Click handler
+const getCurMilliseconds = function() {
+  console.log(`Current Milliseconds: ${new Date().getMilliseconds()}`);
+};
+
 // Event listener
 document.querySelector('.sub-ms').addEventListener('click', function() {
   click.subscribe(getCurMilliseconds);
@@ -40,8 +43,3 @@ document.querySelector('.unsub-ms').addEventListener('click', function() {
 document.querySelector('.fire').addEventListener('click', function() {
   click.fire();
 });
-
-// Click handler
-const getCurMilliseconds = function() {
-  console.log(`Current Milliseconds: ${new Date().getMilliseconds()}`);
-};
