@@ -18,5 +18,6 @@ function fullName(first, last, ...titles) {
 
 console.log('endang', 'ismaya', 'III');
 
-const multiply = (...nums) => nums.reduce((total, curValue) => total * curValue);
+const multiply = (...nums) =>
+  nums.reduce((total, curValue) => total * curValue);
 console.log(multiply(10, 20, 30, 40, 50));

@@ -17,8 +17,12 @@ const maxGrade = grades.reduce((max, currentVal) => {
   return max;
 });
 
-const maxWithMath = grades.reduce((max, currentVal) => Math.max(max, currentVal));
-const minWithMath = grades.reduce((max, currentVal) => Math.min(max, currentVal));
+const maxWithMath = grades.reduce((max, currentVal) =>
+  Math.max(max, currentVal)
+);
+const minWithMath = grades.reduce((max, currentVal) =>
+  Math.min(max, currentVal)
+);
 
 console.log(`Max Grade from ${grades.join(' ')} is ${maxGrade}`);
 console.log(`Max Grade from ${grades.join(' ')} is ${maxWithMath}`);

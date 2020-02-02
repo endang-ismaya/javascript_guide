@@ -1,3 +1,4 @@
+/* eslint-disable dot-notation */
 // BradTraversy - Udemy
 const person = {
   firstName: 'Steve',

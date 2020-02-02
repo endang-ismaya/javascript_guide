@@ -1,10 +1,9 @@
-/* jshint esversion: 6 */
-
+/* eslint-disable max-classes-per-file */
 class Square1 {
-    constructor(height, width) {
-        this.height = height;
-        this.width = width;
-    }
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
 }
 
 let kotak1 = new Square1(100, 200);
@@ -17,31 +16,31 @@ console.log(kotakLain1.width); // 400
 // with setter and getter
 // -----------------------
 class Square {
-    constructor(height, width) {
-        this.height = height;
-        this.width = width;
-    }
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
 
-    setHeight(newHeight) {
-        this.height = newHeight;
-    }
+  setHeight(newHeight) {
+    this.height = newHeight;
+  }
 
-    setWidth(newWidth) {
-        this.width = newWidth;
-    }
+  setWidth(newWidth) {
+    this.width = newWidth;
+  }
 
-    getHeight() {
-        return this.height;
-    }
+  getHeight() {
+    return this.height;
+  }
 
-    getWidth() {
-        return this.width;
-    }
+  getWidth() {
+    return this.width;
+  }
 
-    getArea() {
-        let area = this.height * this.width;
-        return area;
-    }
+  getArea() {
+    let area = this.height * this.width;
+    return area;
+  }
 }
 
 let kotak = new Square(100, 200);

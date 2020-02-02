@@ -34,3 +34,4 @@ const books = [
 books.forEach(function(book) {
   console.log(book.title.toUpperCase());
 });
+
