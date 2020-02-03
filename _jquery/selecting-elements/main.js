@@ -87,3 +87,10 @@ $('div')
   .filter('[class *= "div-"]')
   .not('.div-1')
   .css({ color: 'crimson' });
+
+// getting / setting element value
+$('input').css({ padding: '8px', border: '0' });
+$('input[name="yes"]').prop('checked', true);
+$('input[type=text]')
+  .first()
+  .val('setting value from jquery');
