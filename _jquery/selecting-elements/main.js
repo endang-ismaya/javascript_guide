@@ -60,3 +60,30 @@ $('.parent')
     'font-style': 'italic',
     color: 'fuchsia'
   });
+
+// selecting parent with its children
+$('.children-1')
+  .parent()
+  .css({ color: 'teal' });
+
+$('.hobbies')
+  .prev()
+  .css({ color: 'fuchsia' });
+
+$('.hobbies')
+  .next()
+  .css({ color: 'purple', 'font-style': 'italic', 'word-spacing': '15px' });
+
+// selecting with EQ
+$('.list-0').css({ 'background-color': 'lawngreen', display: 'inline-block' });
+$('.list-0 li:eq(2)').css({ 'background-color': 'black', color: 'whitesmoke' });
+$('.list-0')
+  .parents()
+  .eq(0)
+  .css({ 'background-color': 'darkgreen', 'text-align': 'center' });
+
+// selecting with filter and *
+$('div')
+  .filter('[class *= "div-"]')
+  .not('.div-1')
+  .css({ color: 'crimson' });
