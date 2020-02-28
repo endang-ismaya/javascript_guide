@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../jquery-ui-1.12.1.custom/jquery-ui.min.css" />
+    <link rel="stylesheet" href="./../jquery-ui-1.12.1.custom/jquery-ui.theme.min.css" />
+    <title>Jquery UI</title>
+    <style>
+      .draggable {
+        width: 100px;
+        height: 100px;
+        background-color: blueviolet;
+      }
+
+      .parent {
+        width: 300px;
+        height: 300px;
+        background-color: burlywood;
+      }
+
+      .handle {
+        display: inline-block;
+        background-color: black;
+        cursor: default;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="draggable">
+        <div class="handle">x</div>
+        <p>drag me around</p>
+      </div>
+      <div class="draggable not-this">
+        <p>drag me around</p>
+      </div>
+    </div>
+
+    <script src="./../jquery-3.4.1.min.js"></script>
+    <script src="./../jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
