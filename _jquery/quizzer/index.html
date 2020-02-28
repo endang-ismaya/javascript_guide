@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="./../jquery-ui-1.12.1.custom/jquery-ui.min.css"
+    />
+    <title>Quizzer</title>
+  </head>
+  <body>
+    <div class="content_container">
+      <!-- PANEL ONE -->
+      <div class="item panel_one" data-panel="0">
+        <div class="wrapper">
+          <h1 class="hidden">Quizzer</h1>
+          <div class="start_quiz">Start Quiz</div>
+        </div>
+      </div>
+
+      <!-- PANEL TWO -->
+      <div class="item panel_two" data-panel="1">
+        <div class="wrapper">
+          <h3>How do you drink Coffee?</h3>
+          <div class="options">
+            <div>Very Cold</div>
+            <div>Warm</div>
+            <div>I don't drink</div>
+          </div>
+          <div class="next_question" data-next="2">
+            Next question
+          </div>
+        </div>
+      </div>
+
+      <!-- PANEL THREE -->
+      <div class="item panel_three" data-panel="2">
+        <div class="wrapper">
+          <h3>What do you think about JavaScript?</h3>
+          <div class="options">
+            <div>Love it</div>
+            <div>Hate it</div>
+            <div>Don't care'</div>
+          </div>
+          <div class="next_question" data-next="3">
+            Next question
+          </div>
+        </div>
+      </div>
+
+      <!-- PANEL FOUR -->
+      <div class="item panel_four" data-panel="3">
+        <div class="wrapper">
+          <h3>What do you think about PHP?</h3>
+          <div class="options">
+            <div>Love it</div>
+            <div>Hate it</div>
+            <div>Don't care'</div>
+          </div>
+          <div class="next_question" data-next="4">
+            Next question
+          </div>
+        </div>
+      </div>
+
+      <!-- PANEL FIVE -->
+      <div class="item panel_five" data-panel="4">
+        <div class="wrapper">
+          <h3>What do you think about JAVA?</h3>
+          <div class="options">
+            <div>Love it</div>
+            <div>Hate it</div>
+            <div>Don't care'</div>
+          </div>
+          <div class="next_question" data-next="5">
+            Next question
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PANEL SIX -->
+    <div class="item panel_six hidden" data-panel="4">
+      <div class="wrapper">
+        <h3>Thank you for participating!!</h3>
+      </div>
+    </div>
+
+    <div class="error">
+      Please make as selection
+    </div>
+    <div class="progress">
+      <div class="bar"></div>
+    </div>
+
+    <script src="./../jquery-3.4.1.min.js"></script>
+    <script src="./../jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
