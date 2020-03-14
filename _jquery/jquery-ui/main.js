@@ -51,3 +51,41 @@ $('.trigger').click(function() {
   const list = $('#sortable').sortable('toArray');
   console.log(list);
 });
+
+// accordion
+$('#accordion').accordion({
+  active: 1,
+  // animate: 200,
+  collapsible: true,
+  event: 'mouseover'
+});
+
+// datepicker
+const datePicker = $('#datepicker');
+datePicker.datepicker({
+  minDate: 0,
+  maxDate: 10
+});
+
+datePicker.change(function(e) {
+  console.log($(this).val());
+});
+
+// autocomplete
+const list = ['Endang', 'Indah', 'Alde', 'Aqeela', 'Auza', 'Arsyila'];
+$('#tags').autocomplete({
+  source: list,
+  minLength: 3
+});
+
+// slider
+$('#slider').slider({
+  min: 10,
+  max: 500,
+  step: 5,
+  range: true,
+  change: function(event, ui) {
+    console.log(ui.values[0]);
+    console.log(ui.values[1]);
+  }
+});
