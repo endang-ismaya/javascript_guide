@@ -33,7 +33,7 @@
   },
   "overrides": {
     "rimraf": "^4.4.1",
-    "glob": "^10.4.5",
+    "glob": "^10.5.0",
     "inflight": "npm:once@1.4.0"
   }
 }
