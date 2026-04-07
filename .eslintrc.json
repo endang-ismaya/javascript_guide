@@ -1,7 +1,14 @@
 {
   "parser": "@babel/eslint-parser",
-  "extends": ["airbnb", "prettier", "plugin:node/recommended"],
-  "plugins": ["prettier"],
+  "parserOptions": {
+    "requireConfigFile": false,
+    "babelOptions": {
+      "babelrc": false,
+      "configFile": false
+    }
+  },
+  "extends": ["airbnb", "prettier", "plugin:n/recommended"],
+  "plugins": ["prettier", "n"],
   "rules": {
     "prettier/prettier": "error",
     "spaced-comment": "off",
