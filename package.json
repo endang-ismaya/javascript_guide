@@ -16,8 +16,8 @@
   "author": "Endang Ismaya",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.26.0",
-    "@babel/eslint-parser": "^7.26.0",
+    "@babel/core": "^8.0.1",
+    "@babel/eslint-parser": "^8.0.1",
     "eslint": "^9.26.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.31.0",
